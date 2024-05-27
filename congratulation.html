@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        body{
+            height: 80vh;
+            /* width: 100%; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-image:radial-gradient(rgb(149, 0, 255),rgb(255, 0, 153)) ;
+            /* background-image: url(stars\ img.jpg);
+            background-size: cover; */
+        }
+        #main{
+            height: 400px;
+            width: 350px;
+            background-image:radial-gradient(rgba(255, 4, 0, 0.496),rgba(93, 0, 255, 0.66)) ;
+            color: rgb(0, 0, 0);
+            align-content: center;
+            text-align: center;
+            border-radius: 30px;
+            display: none;
+
+          
+        }
+        .main h1{
+            transform: rotateZ(-25deg);
+          
+        }
+        button{
+            padding: 10px;
+            margin-top: 10px;
+            background-color: rgb(144, 0, 255);
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 10px;
+            border-style: dotted;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+       <h1>CONGRATULATIONS</h1>
+       <h1>BOTH OF U &</h1>
+       <h1>keep it up</h1>
+    </div>
+    <button id="go" onclick="sis()">click me</button>
+    <script>
+        var a = document.getElementById("main");
+        var b = document.getElementById("go");
+
+     function sis(){
+      a.style.display="block";
+      b.style.display="none";
+
+     }
+    </script>
+</body>
+</html>
